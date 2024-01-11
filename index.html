@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor App </title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Welcome to Live Currency Convertor... </h1>
+    <div id="container">
+        <div id="Container1">
+            <h2 id="instruction">Enter Your Details:</h2>
+            <div id="userInput">
+                <div id="ui1" class="labelAtTop">
+                    <label for="baseCurr"> Select Base Currency:</label>
+                    <select id="baseCurr" name="Base Currency">
+                        <!-- <option value="" disabled selected>Select Base Currency</option>
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="PKR">PKR</option>
+                    <option value="CAD">CAD</option> -->
+
+                    </select>
+                </div>
+
+                <div id="ui2" class="labelAtTop">
+                    <label for="amount"> Enter Amount:</label>
+                    <input type="number" placeholder="Enter Amount" id="amount" name="amount" step="any" min="0">
+                </div>
+
+
+                <div id="ui3" class="labelAtTop">
+                    <label for="desiredCurr"> Select Desired Currency:</label>
+                    <select id="desiredCurr" name="Desired Currency">
+                        <!-- <option value="" disabled selected>Select Desired Currency</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="PKR">PKR</option>
+                    <option value="CAD">CAD</option> -->
+                    </select>
+                </div>
+            </div>
+
+            <div id="btn">
+                <button type="button" id="submitBtn"
+                    onclick="updateAmount(), updateUserCurr() , updateApiCurr(), fetchExchangeRate()"> Convert
+                    Currency</button>
+            </div>
+
+            <div id="output">
+                <div id="card1" class="card">
+                    <h2 id="opMessage"> Converted Amount: </h2>
+                    <div id="output-card" class="item">
+                        <div id="userUnit">
+                            <div>
+                                <span id="code1"> XXX </span>
+                                <span id="Amount1"> _ _ _</span>
+                            </div>
+
+                        </div>
+
+
+                        <div id="arrow">&equals;</div>
+
+
+                        <div id="apiUnit">
+                            <div>
+                                <span id="code2"> XXX </span>
+                                <span id="Amount2"> _ _ _ _</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Container2">
+
+            <div id="card2" class="card">
+                <h2> Your Amount in other Popular Currency:</h2>
+                <div id="otherPopularCurrencyConversion-card" class="item">
+                    <ul id="other1"></ul>
+                    <ul id="other2"></ul>
+                    <ul id="other3"></ul>
+                    <ul id="other4"></ul>
+                    <ul id="other5"></ul>
+                </div>
+            </div>
+
+            <div id="historySec">
+                <h2> To Check History Data, Kindly pick the Date: </h2>
+                <br>
+
+                <label for="datepicker"> Select date: </label>
+                <br>
+                <input type="date" id="datepicker" name="datepicker" pattern="\d{4}-\d{2}-\d{2}" required>
+
+
+                <br>
+                <button type="button" id="historyBtn" onclick="getHistoricalData()"> See History</button>
+
+                <div id="historyDataSpace">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
