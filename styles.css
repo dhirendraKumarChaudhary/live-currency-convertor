@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@600;700;900&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Roboto Condensed', 'sans-serif';
+    max-width: 100%;
+}
+
+
+
+h1 {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 40px;
+
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: bisque;
+    display: flex;
+    background-image: url(bg.jpg);
+    background-size: cover;
+
+}
+
+#Container1 {
+    width: 50vw;
+    height: fit-content;
+}
+
+#Container2 {
+    height: 100vh;
+    width: 50vw;
+    display: none;
+}
+
+#userInput {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#userInput select,
+input {
+    padding: 10px;
+    margin: 30px 20px 30px 20px;
+    border-radius: 7px;
+    width: 300px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+
+.labelAtTop {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#btn{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#btn button {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#btn button:hover {
+    cursor: pointer;
+}
+
+#card1{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#card2{
+    margin-left: 50px;
+}
+
+#output{
+    display: none;
+}
+#output-card{
+    background-color:rgb(137, 240, 168);
+    width:450px;
+    height: 80px;
+    padding: 20px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 3px black;
+    border-radius: 30px;
+    margin-top: 18px;
+    font-size: 26px;
+    font-weight: 900;
+
+}
+
+#otherPopularCurrencyConversion-card{
+    background-color:rgb(137, 240, 168);
+    width:450px;
+    height: 140px;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 3px black;
+    border-radius: 30px;
+    margin-top: 18px;
+}
+
+
+#historyBtn{
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#historySec{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#historySec button:hover{
+    cursor: pointer;
+
+}
